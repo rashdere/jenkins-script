@@ -13,3 +13,9 @@ sudo apt-get update -y
 sudo apt install openjdk-17-jre -y 
 
 sudo apt-get install jenkins -y
+
+apt-get update -y
+
+apt-get install python3.8 -y
+
+apt-get install -y python3-pip
