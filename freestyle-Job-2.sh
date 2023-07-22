@@ -3,5 +3,5 @@ if [[ ${ResultsInFile} == true ]]
 then
 	echo " My name is ${FirstName} ${LastName} and I am a ${Gender} " >> name.txt
 else
-	echo " My name is ${FirstName} ${LastName} and I am a ${Gender} "
+	echo " No information found " >> name01.txt
 fi
