@@ -8,9 +8,9 @@ pipeline {
         }
         stage('Upload file') {
             steps {
-                withAWS(credentials: 'my-cba-aws-credential', region: 'eu-west-2') {
+                withAWS(credentials: 'my-cba-aws-credential', region: 'us-east-1') {
                     sh 'echo "hello again Cloudboosta Students">hello.txt'
-                    s3Upload(pathStyleAccessEnabled: true, payloadSigningEnabled: true, file:'hello.txt', bucket:'document-ak', path:'hello.txt')
+                    s3Upload(pathStyleAccessEnabled: true, payloadSigningEnabled: true, file:'hello.txt', bucket:'cba-jenkinsbucket', path:'hello.txt')
                 }
             }
         }
